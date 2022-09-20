@@ -17,7 +17,9 @@ function App() {
   return (
     <div>
       <Navbar />
-      {places}
+      <main>
+        {places}
+      </main>      
     </div>
   )
 }
