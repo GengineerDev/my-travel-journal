@@ -1,19 +1,19 @@
-export default function Card() {
+export default function Card(props) {
     return (
-        <main>
+        <section>
             <div className='card'>
-                <img src="https://source.unsplash.com/WLxQvbMyfas" alt="Mount Fugi" className='card-pic'/>
+                <img src={props.imageUrl} alt="Mount Fuji" className='card-pic'/>
                 <div class="side-info">
                     <p className='location'>
-                        <img src="src/assets/marker.png" className='marker'/> JAPAN 
-                        <a href="https://goo.gl/maps/1DGM5WrWnATgkSNB8" target="_blank">View on Google Maps</a>
+                        <img src="src/assets/marker.png" className='marker'/> {props.location.toUpperCase()} 
+                        <a href={props.googleMapsUrl} target="_blank">View on Google Maps</a>
                     </p>
-                    <h1 className='title'>Mount Fuji</h1>
-                    <strong>12 Jan, 2021 - 24 Jan, 2021</strong>
-                    <p className='description'>Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                    <h1 className='title'>{props.title}</h1>
+                    <strong>{props.startDate} - {props.endDate}</strong>
+                    <p className='description'>{props.description}</p>
                 </div>
             </div>
             <div className='divider'></div>
-        </main>
+        </section>
     )
 }

@@ -5,10 +5,19 @@ import data from './data'
 
 function App() {
 
+  const places = data.map(place => {
+    return (
+      <Card 
+        key={place.id}
+        {...place}
+      />
+    )
+  })
+
   return (
     <div>
       <Navbar />
-      <Card />
+      {places}
     </div>
   )
 }
