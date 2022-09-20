@@ -18,3 +18,57 @@
 .logo > img {
   width: 4.8rem;
 }
+
+main {
+  padding: 4.5rem 4rem 2.8rem 4rem;
+}
+
+.card-pic {
+  border-radius: 0.5rem;
+  width: 25rem;
+  height: 33.5rem;
+}
+
+.side-info {
+  font-size: 2rem;
+}
+
+.location {  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.17em;
+}
+
+a {
+  letter-spacing: normal;
+  color: #918E9B;
+  margin-left: 1.2rem;
+  align-self: flex-end;
+}
+
+.marker {
+  margin-right: 0.4rem;
+}
+
+.title { 
+  margin: 0.5rem 0 2rem 0;
+  font-size: 5rem;
+}
+
+.description {
+  margin-top: 1.8rem;
+}
+
+.card {
+  display: flex;  
+  gap: 3.8rem;
+}
+
+.side-info {
+  align-self: center;
+}
+
+.divider {
+  border: 1px solid #F5F5F5;
+  margin-block: 3.6rem;
+}
